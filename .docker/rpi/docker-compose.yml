@@ -23,7 +23,7 @@ services:
       - /dev:/dev
 
     environment:
-      ROS_DOMAIN_ID: 0
+      ROS_DOMAIN_ID: 6
       RMW_IMPLEMENTATION: rmw_cyclonedds_cpp
 
     # ESP32 sobre USB-serial. Ajusta según tu placa:
