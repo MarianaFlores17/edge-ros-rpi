@@ -19,9 +19,10 @@ setup(
     license='Apache-2.0',
     entry_points={
         'console_scripts': [
-            'led_edge = led_edge.led_edge:main',
-            # Uso: ros2 run led_edge blink
-            'blink = led_edge.led_blink_publisher:main',
+            # El comando 'blink' ahora llamará correctamente a tu archivo default 'led_edge.py'
+            'blink = led_edge.led_edge:main',
+            # Registramos tu nuevo comando para el receptor apuntando a tu archivo 'led_blink_subscriber.py'
+            'led_blink_subscriber = led_edge.led_blink_subscriber:main',
         ],
     },
 )
