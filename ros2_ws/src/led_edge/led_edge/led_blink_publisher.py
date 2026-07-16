@@ -20,3 +20,4 @@ class LedControlPublisher(Node):
         # Publicamos el mensaje Bool al ESP32
         self.publisher_.publish(esp32_msg)
         self.get_logger().info(f'Publicado: {"ON" if esp32_msg.data else "OFF"}')
+        
