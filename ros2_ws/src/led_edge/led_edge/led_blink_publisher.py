@@ -8,6 +8,7 @@ suscrito. Reemplaza al comando manual `ros2 topic pub`.
 Ejecutar:
     ros2 run led_edge blink
 """
+
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import Bool
